@@ -1,0 +1,32 @@
+{
+  "name": "atm",
+  "version": "1.0.0",
+  "description": "An atm like machine demo app",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'nodemon index.js' 'node-sass -w src/css/style.scss src/css/style.css'",
+    "prestart": "node-sass src/css/style.scss src/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielt69/atm.git"
+  },
+  "keywords": [
+    "html",
+    "javascript",
+    "css"
+  ],
+  "author": "Daniel Tsionit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielt69/atm/issues"
+  },
+  "homepage": "https://github.com/danielt69/atm#readme",
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
