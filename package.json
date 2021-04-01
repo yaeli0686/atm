@@ -4,8 +4,8 @@
   "description": "An atm like machine demo app",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently 'nodemon index.js' 'node-sass -w src/css/style.scss src/css/style.css'",
-    "prestart": "node-sass src/css/style.scss src/css/style.css",
+    "start": "concurrently 'nodemon index.js' 'node-sass -w docs/css/style.scss docs/css/style.css'",
+    "prestart": "node-sass docs/css/style.scss docs/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
