@@ -1,8 +1,125 @@
 body {
-    background: #ededed;
-    color: rgb(69, 69, 69);
-    font-family: 'Roboto', sans-serif;
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Ubuntu', sans-serif;
+  background: #ededed;
+  color: rgb(69, 69, 69);
+  font-family: "Roboto", sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Ubuntu", sans-serif;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  button {
+    font-size: 24px;
+    padding: 8px 18px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    box-shadow: inset 5px 4px 11px -10px #00000082, 3px 3px 5px -4px #0000009c;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: #dedede;
     }
+    &.enter {
+      grid-column: span 2;
+    }
+  }
+  .page {
+    background-color: white;
+    width: 840px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 2px 11px 12px -8px #0000004f;
+    overflow: hidden;
+    &.welcome {
+      h1 {
+        font-size: 52px;
+        max-width: 48%;
+        margin-bottom: -120px;
+      }
+      img {
+        transform-origin: right bottom;
+        transform: rotate(90deg) translate(0, 132px);
+        cursor: pointer;
+      }
+    }
+    &.pinCodePage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      .pinCodeValue {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 30px;
+        span {
+          width: 32px;
+          height: 32px;
+          border-bottom: 2px solid black;
+          display: inline-block;
+        }
+      }
+      .numPad {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+      }
+      h1 {
+        font-size: 51px;
+      }
+    }
+    &.amountPage {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      .name {
+        font-size: 1.8em;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .amounts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        label {
+          grid-column: span 3;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 8px;
+          grid-column: span 3;
+          text-transform: uppercase;
+          input {
+            flex: 1 1 auto;
+            width: 20px;
+            border: none;
+            box-shadow: 1px 1px 5px -2px black;
+            line-height: 32px;
+            border-radius: 5px;
+          }
+        }
+        .enter {
+          grid-column-start: 3;
+        }
+      }
+    }
+    &:last-child {
+      font-size: 1.5em;
+    }
+  }
 }

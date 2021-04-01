@@ -1,21 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <center>
-        <h1>My Personal Boilerplate</h1>
-    </center>
+
+    <div class="main">
+        <div class="page welcome">
+            <h1>Welcome to Bank Ha'poalim<br>
+                Please insert your credit-card
+            </h1>
+            <img src="img/small_animation.gif" />
+        </div>
+
+        <div class="page pinCodePage hidden">
+            <div>
+                <h1>Please enter your pin-code</h1>
+                <div class="pinCodeValue">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <div class="numPad">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>0</button>
+                <button class="enter">Enter</button>
+
+            </div>
+        </div>
+        <div class="page amountPage hidden">
+            <h1><span class="name">Hi Moshe,</span> please enter the amount you would like to withdraw?</h1>
+            <div class="amounts">
+                <button>100$</button>
+                <button>200$</button>
+                <button>300$</button>
+                <button>400$</button>
+                <button>500$</button>
+                <button>1000$</button>
+
+                <label for="amount">
+                    other
+                    <input type="number" class="amount" name="amount" step="20">
+                </label>
+                <button class="enter">Enter</button>
+            </div>
+        </div>
+        <div class="page hidden">
+            <h1>Thank you and have a nice day</h1>
+            <h2>Don't forget your credit-card</h2>
+        </div>
+    </div>
+
 
     <footer>
         <script src="./js/script.js"></script>
     </footer>
 </body>
+
 </html>
