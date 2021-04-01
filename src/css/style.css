@@ -30,7 +30,8 @@ body {
     .main button:hover {
       background-color: #dedede; }
     .main button.enter {
-      grid-column: span 2; }
+      grid-column: span 2;
+      background-color: lightgreen; }
   .main .page {
     background-color: white;
     width: 840px;
@@ -60,7 +61,9 @@ body {
           width: 32px;
           height: 32px;
           border-bottom: 2px solid black;
-          display: inline-block; }
+          display: inline-block;
+          text-align: center;
+          font-size: 32px; }
       .main .page.pinCodePage .numPad {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -87,14 +90,18 @@ body {
           align-items: center;
           gap: 8px;
           grid-column: span 3;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 20px; }
           .main .page.amountPage .amounts label input {
             flex: 1 1 auto;
             width: 20px;
             border: none;
             box-shadow: 1px 1px 5px -2px black;
             line-height: 32px;
-            border-radius: 5px; }
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 4px 8px; }
         .main .page.amountPage .amounts .enter {
           grid-column-start: 3; }
     .main .page:last-child {
